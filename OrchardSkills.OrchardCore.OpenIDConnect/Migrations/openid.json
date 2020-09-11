@@ -1,0 +1,43 @@
+{
+  "name": "",
+  "displayName": "",
+  "description": "",
+  "author": "",
+  "website": "",
+  "version": "",
+  "issetuprecipe": false,
+  "categories": [],
+  "tags": [],
+  "steps": [
+    {
+      "name": "OpenIdServerSettings",
+      "AllowClientCredentialsFlow": true,
+      "AllowAuthorizationCodeFlow": true,
+      "EnableTokenEndpoint": true,
+      "EnableAuthorizationEndpoint": true,
+      "Scopes":  "openid email phone profile roles"
+    },
+    {
+      "name": "OpenIdApplication",
+      "ClientId": "sample_console_client",
+      "ClientSecret": "OpenSesame",
+      "DisplayName": "OpenAPI Console Client",
+      "AllowClientCredentialsFlow": true,
+      "RoleEntries": [
+        {
+          "Name": "API",
+          "Selected": true
+        }
+      ],
+      "Type": "confidential"
+    },
+    {
+      "name": "OpenIdApplication",
+      "ClientId": "openapi_auth_code_flow",
+      "ClientSecret": "OpenSesame",
+      "DisplayName": "OpenAPI Auth Code Flow",
+      "AllowAuthorizationCodeFlow": true,
+      "Type": "confidential"
+    }
+  ]
+}
