@@ -15,13 +15,13 @@
       "AllowAuthorizationCodeFlow": true,
       "EnableTokenEndpoint": true,
       "EnableAuthorizationEndpoint": true,
-      "Scopes":  "openid email phone profile roles"
+      "Scopes": "openid offline_access email phone profile roles"
     },
     {
       "name": "OpenIdApplication",
-      "ClientId": "sample_console_client",
+      "ClientId": "console_client",
       "ClientSecret": "OpenSesame",
-      "DisplayName": "OpenAPI Console Client",
+      "DisplayName": "Console Client",
       "AllowClientCredentialsFlow": true,
       "RoleEntries": [
         {
@@ -33,9 +33,9 @@
     },
     {
       "name": "OpenIdApplication",
-      "ClientId": "openapi_auth_code_flow",
-      "ClientSecret": "OpenSesame",
-      "DisplayName": "OpenAPI Auth Code Flow",
+      "ClientId": "authorization_code_flow",
+      "ClientSecret": "0penSes@me",
+      "DisplayName": "Authorization Code Flow",
       "AllowAuthorizationCodeFlow": true,
       "Type": "confidential"
     }

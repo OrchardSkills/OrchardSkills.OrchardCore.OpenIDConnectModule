@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OrchardSkills.OrchardCore.BlazorWASM\OrchardSkills.OrchardCore.BlazorWASM.csproj" />
     <ProjectReference Include="..\OrchardSkills.OrchardCore.MaterialDesignTheme\MaterialDesignTheme.csproj" />
     <ProjectReference Include="..\OrchardSkills.OrchardCore.OpenIDConnect\OrchardSkills.OrchardCore.OpenIDConnect.csproj" />
   </ItemGroup>
